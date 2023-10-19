@@ -8,19 +8,4 @@ export class CreateTodoDto {
     })
     @IsString()
     title: string
-
-    @ApiProperty({
-        description: "The content of the TODO",
-    })
-    @IsString()
-    @IsOptional()
-    content: string
-
-    @ApiProperty({
-        description: "The state of the TODO (whether it is finished or not)",
-        example: false
-    })
-    @IsBoolean()
-    @IsOptional()
-    is_finished: boolean
 }
